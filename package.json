@@ -1,6 +1,6 @@
 {
   "name": "dom-stream",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "stream a dom element and it's updates into a dom element container",
   "main": "index.js",
   "repository": {
@@ -38,7 +38,7 @@
   "scripts": {
     "start": "npm run watch & npm run serve",
     "serve": "ecstatic .",
-    "watch": "watchify example.js -v -o bundle.js",
+    "watch": "watchify demo.js -v -o bundle.js",
     "test": "standard *.js"
   }
 }

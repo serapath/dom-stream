@@ -25,3 +25,4 @@ function demoComponent (opts) {
 var el$ = demoComponent()
 document.body.appendChild(el$)
 ```
+#### demo https://serapath.github.io/dom-stream/
