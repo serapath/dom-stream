@@ -1,23 +1,23 @@
 {
   "name": "dom-stream",
-  "version": "2.0.1",
-  "description": "stream dom elements",
+  "version": "3.0.0",
+  "description": "stream a dom element and it's updates into a dom element container",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/serapath/dom-stream.git"
   },
   "keywords": [
     "dom",
+    "el",
+    "component",
     "stream",
+    "streams",
     "element",
-    "node",
-    "node",
     "elements",
-    "streams"
+    "node",
+    "updates",
+    "flow"
   ],
   "author": "@serapath",
   "license": "MIT",
@@ -28,5 +28,17 @@
   "dependencies": {
     "readable-stream": "^2.2.2",
     "x-is-dom": "^1.0.0"
+  },
+  "devDependencies": {
+    "bel": "^5.0.0",
+    "ecstatic": "^2.2.1",
+    "standard": "^10.0.2",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "start": "npm run watch & npm run serve",
+    "serve": "ecstatic .",
+    "watch": "watchify example.js -v -o bundle.js",
+    "test": "standard *.js"
   }
 }
